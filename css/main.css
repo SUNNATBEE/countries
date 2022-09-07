@@ -271,11 +271,21 @@ body{
     .about__textbox{
         margin-top: 44px;
     }
+    .about__list{
+        display: flex !important;
+        justify-content: flex-start !important;
+    }
     .about__item:nth-child(2){
         margin-right: 10px;
         margin-left: 10px;
         
     }
+}
+@media only screen and (min-width:576px){
+    .about__list{
+        justify-content: center !important;
+    }
+
 }
 @media only screen and (min-width:992px){
     .fonts{
