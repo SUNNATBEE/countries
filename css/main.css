@@ -126,7 +126,6 @@ body{
     background-color: var(--main-header-bg-color);
 }
 .island{
-    width: 286px;
     height: 173.33px;
 }
 .info__name{
