@@ -1,0 +1,296 @@
+  :root{
+    --main-font-family: "Nunito Sans" , "Arial" , sans-serif; 
+    --main-font-weight: 300; 
+    --main-body-bg-color: #fafafa; 
+    --main-text-color: #111517;
+    --main-desc-color: #848484;
+    --main-header-bg-color: #fff;
+}
+
+/* FONTS */ 
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: 
+    url("../fonts/nunito-sans-v12-latin-300.woff2") format("woff2"), 
+    url("../fonts/nunito-sans-v12-latin-300.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: 
+    url("../fonts/nunito-sans-v12-latin-regular.woff2") format("woff2"), 
+    url("../fonts/nunito-sans-v12-latin-regular.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: 
+    url("../fonts/nunito-sans-v12-latin-600.woff2") format("woff2"), 
+    url("../fonts/nunito-sans-v12-latin-600.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: 
+    url("../fonts/nunito-sans-v12-latin-800.woff2") format("woff2"), 
+    url("../fonts/nunito-sans-v12-latin-800.woff") format("woff"); 
+}
+/* ROOT */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+img{
+    display: block;
+    height: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    background-color: var(--main-body-bg-color);
+}
+.root{
+    --main-body-bg-color: #202C36; 
+    --main-header-bg-color:#2B3844;
+    --main-text-color:#fff;
+}
+.site-main{
+    flex-grow: 1;
+}
+
+.site-header{
+    background-color: var(--main-header-bg-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.site-header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__btn{
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    color: var(--main-text-color);
+}
+.second__logo{
+    width: 125px;
+    height: 20px;
+}
+.form-select{
+    background-image: url("../images/white.svg");
+}
+.site-header__btn::before{
+    background-image: url("../images/month.svg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    margin-right: 10px;
+}
+.flags{
+    padding-bottom: 45px;
+}
+.form-control:focus{
+    background-color: var(--main-header-bg-color);
+    color: var(--main-text-color);
+}
+.input__zone{
+    background-color: var(--main-header-bg-color);
+}
+.island{
+    height: 170px;
+}
+.info__name{
+    font-weight: 600;
+    color: var(--main-text-color);
+}
+.info__number{
+    color: var(--main-text-color);
+    font-weight: 300;
+}
+.card-title{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    color:var(--main-text-color);
+}
+.link{
+    text-decoration: none;
+}
+.root .info__name{
+    font-weight: 600;
+}
+.root .info__number{
+    font-weight: 300;
+}
+.root .site-header__btn::before {
+    background-image: url("../images/Path.svg");
+}
+.root .form-select{
+    background-image: url("../images/Shape.svg");
+}
+.second__logo{
+    display: none;
+}
+.root .second__logo{
+    display: block;
+}
+.root .black-logo{
+    display: none;
+}
+.card{
+    background-color: var(--main-header-bg-color);
+}
+.width{
+    max-width: 343px;
+    background-color:var(--main-header-bg-color);
+}
+.form-select__width{
+    background-color: var(--main-header-bg-color);
+    color: var(--main-text-color);
+    max-width: 200px;
+    width: 100%;
+}
+@media only screen and (min-width:600px){
+    .site-header__btn{
+        font-size: 16px;
+    }
+    .black-logo{
+        width: 230px;
+        height: 33px;
+    }
+    .second__logo{
+        width: 230px;
+        height: 33px;
+    }
+}
+@media only screen and (min-width:800px){
+    
+    .hero-section__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.about{
+    padding-top:40px;
+    padding-bottom: 60px;
+}
+.about__link{
+    display: inline-block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--main-text-color);
+    margin-bottom: 64px;
+    padding-top:10px;
+    padding-right: 39px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    background-color: var(--main-header-bg-color);
+    text-decoration: none;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+    border-radius: 2px;
+}
+.about__link::before{
+    background-image: url("../images/arrow-black.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    width: 19px;
+    height: 12px;
+    margin-right: 9px;
+}
+.root .about__link::before{
+    background-image: url("../images/arrow-white.svg");
+}
+.about__img{
+    max-width: 560px;
+    width: 100%;
+    height: 270px;
+}
+.about__text {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--main-text-color);
+}
+.fonts{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+    color: var(--main-text-color);
+}
+.about__country-capital {
+    font-weight: 300;
+}
+.about__level-desc {
+    font-weight: 300;
+    
+}
+.about__link-coutries {
+    display: inline-block;
+    color: var(--main-text-color);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+    border-radius: 2px;
+    padding: 4px 18px;
+    border: 1px solid transparent;
+    background-color: var(--main-header-bg-color);
+    font-weight: 300;
+    text-decoration: none;
+}
+@media only screen and (min-width:375px){
+    .about__item:nth-child(2){
+        margin-right: 10px;
+        margin-left: 10px;
+        
+    }
+}
+@media only screen and (min-width:992px){
+    .fonts{
+        font-size: 13px;
+    }
+    .about__img{
+        height: auto;
+    }
+    .about__textbox{
+        margin-left: 50px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .fonts{
+        font-size: 16px;
+    }
+    .about__inforamtion{
+        margin-right: 117px;
+    }
+    
+}
+
